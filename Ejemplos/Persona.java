@@ -1,21 +1,58 @@
-public class EjemploEncapsulamiento {
-    public static void main(String[] args)
-    {
-        //creación de objeto y asignación del estado inicial
-        Persona obj = new Persona();
-        obj.setGenero("Masculino");
-        obj.setNombre("Cayetano");
-        obj.setPeso(60.5);
-        obj.setTalla(1.5);
-        obj.setApellido("Angulo");
-        obj.setEdad(60);
+public class Persona {
+    private String nombre;
+    private String apellido;
+    private int edad;
+    private String genero;
+    private double peso;
+    private double talla;
 
-        //obtener los datos de las propiedades
-        System.out.println("Nombre: " + obj.getNombre());
-        System.out.println("Apellido: " + obj.getApellido());
-        System.out.println("Edad: " + obj.getEdad());
-        System.out.println("Género: " + obj.getGenero());
-        System.out.println("Peso: " + obj.getPeso());
-        System.out.println("Estatura: " + obj.getTalla());
+    // Métodos set
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public void setTalla(double talla) {
+        this.talla = talla;
+    }
+
+    // Métodos get
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public double getTalla() {
+        return talla;
     }
 }
